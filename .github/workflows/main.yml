@@ -22,7 +22,7 @@ jobs:
         with:
           script-name: main.py
           standalone: true
-          enable-plugins: PySimpleGUI, pywinauto
+          enable-plugins: pysimplegui, pywinauto
 
       # Uploads artifact
       - name: Upload Artifact
