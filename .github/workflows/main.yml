@@ -39,12 +39,10 @@ jobs:
           script-name: main.py
           access-token: ${{ secrets.NUITKA_COMMERCIAL_ACCESS_TOKEN }}
           onefile: true
-          disable-console: true
-
       # Uploads artifact
       - name: Upload Artifacts
         uses: actions/upload-artifact@v3
         with:
           name: ${{ runner.os }} Build
           path: |
-            build/xiv-crafting-helper.exe
+            build/*.exe
